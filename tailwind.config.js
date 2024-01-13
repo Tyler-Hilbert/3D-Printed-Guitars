@@ -1,61 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 
 module.exports = {
-  safelist: [
-    // GRADIENTS
-    "hover:animate-rainbow-river 5s ease infinite",
-    "hover:animate-green-swoosh 2s ease infinite",
-    "hover:animate-serene-sunset 2s ease infinite",
-    "hover:animate-black-swoosh 2s ease infinite",
-    "hover:animate-purple-swoosh 2s ease infinite",
-    "hover:animate-tranquil-waters 5s ease infinite",
-    "hover:animate-mellow-embers 2s ease infinite",
-    "hover:animate-vertical-bliss 2s ease infinite",
-    "hover:animate-vertical-raindance 2s ease infinite",
-    "hover:animate-vertical-azure-wave 2s ease infinite",
-    "hover:animate-vertical-sunset-tide 2s ease infinite",
-    "hover:animate-vertical-golden-dream 2s ease infinite",
-    "hover:animate-diagonal-blaze 2s ease infinite",
-    "hover:animate-diagonal-ocean-wave 2s ease infinite",
-    "hover:animate-diagonal-purple-dream 2s ease infinite",
-    "hover:animate-diagonal-galaxy 2s ease infinite",
-    "hover:animate-diagonal-rotating-sun 2s ease infinite",
-    "hover:animate-blurred-swoosh 2s ease infinite",
-    "hover:animate-fuzzy-dream 2s ease infinite",
-    "hover:animate-misty-fade 2s ease infinite",
-    "hover:animate-hazy-twist 2s ease infinite",
-    "hover:animate-mystic-aura 2s ease infinite",
-    "hover:animate-vibrant-sun 2s ease infinite",
-    "hover:animate-shifting-triangles 2s ease infinite",
-
-    // MOVEMENTS
-    "animate-morphing-rectangle 2s ease infinite",
-
-    // BACKDROP SPACES
-    "animate-blue-galaxy 10s ease infinite",
-    "animate-gray-fluff 5s ease infinite",
-    "animate-pastel-dream 5s ease infinite",
-    "animate-golden-horizon 5s ease infinite",
-    "animate-rose-blush 10s ease infinite",
-    "animate-lavender-dream 5s ease infinite",
-    "animate-amethyst-midnight 10s ease infinite",
-    "animate-pink-blossom 5s ease infinite",
-    "animate-cosmic-wave 5s ease infinite",
-    "animate-glow-next-door 5s ease infinite",
-    "animate-ski-haze 5s ease infinite",
-
-    // CLASSICS
-    "hover:animate-wobble 1s infinite",
-    "hover:animate-melt 1s infinite",
-    "hover:animate-float 1s infinite",
-    "hover:animate-breathe 1s infinite",
-    "hover:animate-squiggle 1s infinite",
-    "hover:animate-flip-and-spin 4s infinite",
-    "hover:animate-twist 4s infinite",
-    "hover:animate-pop 1s infinite",
-    "hover:animate-scatter 1s infinite",
-  ],
-  content: ["**/*.{html,js}"],
   theme: {
     fontFamily: {
       sans: ["Inter", "ui-sans-serif", "system-ui"],
@@ -1216,6 +1161,61 @@ module.exports = {
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
     },
+    safelist: [
+      // GRADIENTS
+      "hover:animate-rainbow-river 5s ease infinite",
+      "hover:animate-green-swoosh 2s ease infinite",
+      "hover:animate-serene-sunset 2s ease infinite",
+      "hover:animate-black-swoosh 2s ease infinite",
+      "hover:animate-purple-swoosh 2s ease infinite",
+      "hover:animate-tranquil-waters 5s ease infinite",
+      "hover:animate-mellow-embers 2s ease infinite",
+      "hover:animate-vertical-bliss 2s ease infinite",
+      "hover:animate-vertical-raindance 2s ease infinite",
+      "hover:animate-vertical-azure-wave 2s ease infinite",
+      "hover:animate-vertical-sunset-tide 2s ease infinite",
+      "hover:animate-vertical-golden-dream 2s ease infinite",
+      "hover:animate-diagonal-blaze 2s ease infinite",
+      "hover:animate-diagonal-ocean-wave 2s ease infinite",
+      "hover:animate-diagonal-purple-dream 2s ease infinite",
+      "hover:animate-diagonal-galaxy 2s ease infinite",
+      "hover:animate-diagonal-rotating-sun 2s ease infinite",
+      "hover:animate-blurred-swoosh 2s ease infinite",
+      "hover:animate-fuzzy-dream 2s ease infinite",
+      "hover:animate-misty-fade 2s ease infinite",
+      "hover:animate-hazy-twist 2s ease infinite",
+      "hover:animate-mystic-aura 2s ease infinite",
+      "hover:animate-vibrant-sun 2s ease infinite",
+      "hover:animate-shifting-triangles 2s ease infinite",
+  
+      // MOVEMENTS
+      "animate-morphing-rectangle 2s ease infinite",
+  
+      // BACKDROP SPACES
+      "animate-blue-galaxy 10s ease infinite",
+      "animate-gray-fluff 5s ease infinite",
+      "animate-pastel-dream 5s ease infinite",
+      "animate-golden-horizon 5s ease infinite",
+      "animate-rose-blush 10s ease infinite",
+      "animate-lavender-dream 5s ease infinite",
+      "animate-amethyst-midnight 10s ease infinite",
+      "animate-pink-blossom 5s ease infinite",
+      "animate-cosmic-wave 5s ease infinite",
+      "animate-glow-next-door 5s ease infinite",
+      "animate-ski-haze 5s ease infinite",
+  
+      // CLASSICS
+      "hover:animate-wobble 1s infinite",
+      "hover:animate-melt 1s infinite",
+      "hover:animate-float 1s infinite",
+      "hover:animate-breathe 1s infinite",
+      "hover:animate-squiggle 1s infinite",
+      "hover:animate-flip-and-spin 4s infinite",
+      "hover:animate-twist 4s infinite",
+      "hover:animate-pop 1s infinite",
+      "hover:animate-scatter 1s infinite",
+    ],
+    content: ["**/*.{html,js}"],
   },
   plugins: [require("@tailwindcss/forms")],
 };
