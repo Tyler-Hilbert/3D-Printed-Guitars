@@ -1364,6 +1364,30 @@ select {
   animation: amethyst-midnight 10s ease infinite;
 }
 
+@keyframes black-swoosh {
+  0% {
+    background-size: 600% 100%;
+    background-position: left center;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(64, 64, 64, 0.8), rgba(128, 128, 128, 0.8), rgba(0, 0, 0, 0.8), rgba(64, 64, 64, 0.8), rgba(128, 128, 128, 0.8), rgba(0, 0, 0, 0.8));
+  }
+
+  50% {
+    background-size: 600% 100%;
+    background-position: right center;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(64, 64, 64, 0.8), rgba(128, 128, 128, 0.8), rgba(0, 0, 0, 0.8), rgba(64, 64, 64, 0.8), rgba(128, 128, 128, 0.8), rgba(0, 0, 0, 0.8));
+  }
+
+  100% {
+    background-size: 600% 100%;
+    background-position: left center;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(64, 64, 64, 0.8), rgba(128, 128, 128, 0.8), rgba(0, 0, 0, 0.8), rgba(64, 64, 64, 0.8), rgba(128, 128, 128, 0.8), rgba(0, 0, 0, 0.8));
+  }
+}
+
+.animate-black-swoosh {
+  animation: black-swoosh 10s ease infinite;
+}
+
 @keyframes blue-galaxy {
   0% {
     background: radial-gradient(100% 225% at 0 100%, #50009a 0, #001aff 100%), linear-gradient(100deg, #fb00a5 50%, #6900cb 100%), linear-gradient(200deg, #8dada4 0, #12de81 100%), linear-gradient(-3deg, #1dadfe 0, #50009a 50%);
@@ -1747,6 +1771,30 @@ select {
 
 .animate-rose-blush {
   animation: rose-blush 10s ease infinite;
+}
+
+@keyframes serene-sunset {
+  0% {
+    background-size: 600% 100%;
+    background-position: left center;
+    background-image: linear-gradient(to right, rgba(255, 111, 97, 0.8), rgba(255, 156, 131, 0.8), rgba(255, 200, 164, 0.8));
+  }
+
+  50% {
+    background-size: 600% 100%;
+    background-position: right center;
+    background-image: linear-gradient(to right, rgba(255, 200, 164, 0.8), rgba(255, 156, 131, 0.8), rgba(255, 111, 97, 0.8));
+  }
+
+  100% {
+    background-size: 600% 100%;
+    background-position: left center;
+    background-image: linear-gradient(to right, rgba(255, 111, 97, 0.8), rgba(255, 156, 131, 0.8), rgba(255, 200, 164, 0.8));
+  }
+}
+
+.animate-serene-sunset {
+  animation: serene-sunset 2s ease infinite;
 }
 
 @keyframes ski-haze {
@@ -2599,6 +2647,10 @@ select {
 
 .rounded-md {
   border-radius: 0.375rem;
+}
+
+.rounded-3xl {
+  border-radius: 1.5rem;
 }
 
 .rounded-b {
@@ -3532,7 +3584,7 @@ select {
 }
 
 .hover\:animate-black-swoosh:hover {
-  animation: black-swoosh 2s ease infinite;
+  animation: black-swoosh 10s ease infinite;
 }
 
 @keyframes blurred-swoosh {

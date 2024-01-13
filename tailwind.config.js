@@ -66,7 +66,7 @@ module.exports = {
         "rainbow-river": "rainbow-river 5s ease infinite",
         "green-swoosh": "green-swoosh 2s ease infinite",
         "serene-sunset": "serene-sunset 2s ease infinite",
-        "black-swoosh": "black-swoosh 2s ease infinite",
+        "black-swoosh": "black-swoosh 10s ease infinite",
         "purple-swoosh": "purple-swoosh 2s ease infinite",
         "tranquil-waters": "tranquil-waters 5s ease infinite",
         "mellow-embers": "mellow-embers 2s ease infinite",
