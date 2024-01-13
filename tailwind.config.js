@@ -7,6 +7,21 @@ module.exports = {
     },
     extend: {
       animation: {
+        // BACKDROP SPACES
+        "blue-galaxy": "blue-galaxy 10s ease infinite",
+        "gray-fluff": "gray-fluff 5s ease infinite",
+        "earth-light": "earth-light 5s ease infinite",
+        "pastel-dream": "pastel-dream 5s ease infinite",
+        "golden-horizon": "golden-horizon 5s ease infinite",
+        "rose-blush": "rose-blush 10s ease infinite",
+        "lavender-dream": "lavender-dream 5s ease infinite",
+        "violet-dusk": "violet-dusk 10s ease infinite",
+        "amethyst-midnight": "amethyst-midnight 10s ease infinite",
+        "pink-blossom": "pink-blossom 5s ease infinite",
+        "cosmic-wave": "cosmic-wave 5s ease infinite",
+        "glow-next-door": "glow-next-door 5s ease infinite",
+        "ski-haze": "ski-haze 5s ease infinite",
+
         // GRADIENTS
         "rainbow-river": "rainbow-river 5s ease infinite",
         "green-swoosh": "green-swoosh 2s ease infinite",
@@ -35,21 +50,6 @@ module.exports = {
 
         // MOVEMENTS
         "morphing-rectangle": "morphing-rectangle 2s ease infinite",
-
-        // BACKDROP SPACES
-        "blue-galaxy": "blue-galaxy 10s ease infinite",
-        "gray-fluff": "gray-fluff 5s ease infinite",
-        "earth-light": "earth-light 5s ease infinite",
-        "pastel-dream": "pastel-dream 5s ease infinite",
-        "golden-horizon": "golden-horizon 5s ease infinite",
-        "rose-blush": "rose-blush 10s ease infinite",
-        "lavender-dream": "lavender-dream 5s ease infinite",
-        "violet-dusk": "violet-dusk 10s ease infinite",
-        "amethyst-midnight": "amethyst-midnight 10s ease infinite",
-        "pink-blossom": "pink-blossom 5s ease infinite",
-        "cosmic-wave": "cosmic-wave 5s ease infinite",
-        "glow-next-door": "glow-next-door 5s ease infinite",
-        "ski-haze": "ski-haze 5s ease infinite",
 
         // CLASSICS
         wobble: "wobble 1s infinite",

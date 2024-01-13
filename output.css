@@ -814,6 +814,54 @@ select {
   max-width: 24rem;
 }
 
+@keyframes blue-galaxy {
+  0% {
+    background: radial-gradient(100% 225% at 0 100%, #50009a 0, #001aff 100%), linear-gradient(100deg, #fb00a5 50%, #6900cb 100%), linear-gradient(200deg, #8dada4 0, #12de81 100%), linear-gradient(-3deg, #1dadfe 0, #50009a 50%);
+    background-size: 100% 100%;
+    background-position: 0% 100%;
+    background-blend-mode: color-dodge, color-burn, color-burn, normal;
+  }
+
+  20% {
+    background: radial-gradient(100% 225% at 0 100%, #50009a 0, #001aff 100%), linear-gradient(100deg, #fb00a5 50%, #6900cb 100%), linear-gradient(200deg, #8dada4 0, #12de81 100%), linear-gradient(-3deg, #1dadfe 0, #50009a 50%);
+    background-size: 105% 105%;
+    background-position: 10% 100%;
+    background-blend-mode: color-dodge, color-burn, color-burn, normal;
+  }
+
+  40% {
+    background: radial-gradient(100% 225% at 0 100%, #50009a 0, #001aff 100%), linear-gradient(100deg, #fb00a5 50%, #6900cb 100%), linear-gradient(200deg, #8dada4 0, #12de81 100%), linear-gradient(-3deg, #1dadfe 0, #50009a 50%);
+    background-size: 110% 300%;
+    background-position: 20% 80%;
+    background-blend-mode: color-dodge, color-burn, color-burn, normal;
+  }
+
+  60% {
+    background: radial-gradient(100% 225% at 0 100%, #50009a 0, #001aff 100%), linear-gradient(100deg, #fb00a5 50%, #6900cb 100%), linear-gradient(200deg, #8dada4 0, #12de81 100%), linear-gradient(-3deg, #1dadfe 0, #50009a 50%);
+    background-size: 115% 115%;
+    background-position: 30% 70%;
+    background-blend-mode: color-dodge, color-burn, color-burn, normal;
+  }
+
+  80% {
+    background: radial-gradient(100% 225% at 0 100%, #50009a 0, #001aff 100%), linear-gradient(100deg, #fb00a5 50%, #6900cb 100%), linear-gradient(200deg, #8dada4 0, #12de81 100%), linear-gradient(-3deg, #1dadfe 0, #50009a 50%);
+    background-size: 250% 120%;
+    background-position: 40% 60%;
+    background-blend-mode: color-dodge, color-burn, color-burn, normal;
+  }
+
+  100% {
+    background: radial-gradient(100% 225% at 0 100%, #50009a 0, #001aff 100%), linear-gradient(100deg, #fb00a5 50%, #6900cb 100%), linear-gradient(200deg, #8dada4 0, #12de81 100%), linear-gradient(-3deg, #1dadfe 0, #50009a 50%);
+    background-size: 100% 100%;
+    background-position: 0% 100%;
+    background-blend-mode: color-dodge, color-burn, color-burn, normal;
+  }
+}
+
+.animate-blue-galaxy {
+  animation: blue-galaxy 10s ease infinite;
+}
+
 @keyframes blurred-swoosh {
   0% {
     background-size: 600% 100%;
@@ -1067,30 +1115,6 @@ select {
   animation: mystic-aura 2s ease infinite;
 }
 
-@keyframes shifting-triangles {
-  0% {
-    background-image: linear-gradient(60deg, rgba(255, 0, 0, 0.8) 25%, rgba(0, 255, 0, 0.8) 50%, rgba(0, 0, 255, 0.8) 75%);
-    background-size: 200% 200%;
-    background-position: top left;
-  }
-
-  50% {
-    background-image: linear-gradient(60deg, rgba(0, 0, 255, 0.8) 25%, rgba(255, 0, 0, 0.8) 50%, rgba(0, 255, 0, 0.8) 75%);
-    background-size: 200% 200%;
-    background-position: bottom right;
-  }
-
-  100% {
-    background-image: linear-gradient(60deg, rgba(255, 0, 0, 0.8) 25%, rgba(0, 255, 0, 0.8) 50%, rgba(0, 0, 255, 0.8) 75%);
-    background-size: 200% 200%;
-    background-position: top left;
-  }
-}
-
-.animate-shifting-triangles {
-  animation: shifting-triangles 2s ease infinite;
-}
-
 @keyframes vertical-azure-wave {
   0% {
     background-size: 100% 500%;
@@ -1182,6 +1206,377 @@ select {
 
 .animate-vibrant-sun {
   animation: vibrant-sun 2s ease infinite;
+}
+
+@keyframes gray-fluff {
+  0% {
+    background-size: 100% 100%;
+    background-position: left top;
+    background-image: linear-gradient(to bottom right, rgba(96, 96, 96, 0.8), rgba(0, 0, 0, 0.8));
+  }
+
+  50% {
+    background-size: 200% 200%;
+    background-position: right bottom;
+    background-image: linear-gradient(to bottom right, rgba(96, 96, 96, 0.8), rgba(0, 0, 0, 0.8));
+  }
+
+  100% {
+    background-size: 100% 100%;
+    background-position: left top;
+    background-image: linear-gradient(to bottom right, rgba(96, 96, 96, 0.8), rgba(0, 0, 0, 0.8));
+  }
+}
+
+.animate-gray-fluff {
+  animation: gray-fluff 5s ease infinite;
+}
+
+.animate-earth-light {
+  animation: earth-light 5s ease infinite;
+}
+
+@keyframes golden-horizon {
+  0% {
+    background: linear-gradient(-45deg, #ffd400, #ffad00, #ff6e00, #ff2700);
+    background-size: 200% 200%;
+    background-position: 0% 100%;
+  }
+
+  50% {
+    background: linear-gradient(-90deg, #ffd400, #ffad00, #ff6e00, #ff2700);
+    background-size: 200% 200%;
+    background-position: 100% 0%;
+  }
+
+  100% {
+    background: linear-gradient(-45deg, #ffd400, #ffad00, #ff6e00, #ff2700);
+    background-size: 200% 200%;
+    background-position: 0% 100%;
+  }
+}
+
+.animate-golden-horizon {
+  animation: golden-horizon 5s ease infinite;
+}
+
+@keyframes pastel-dream {
+  0% {
+    background: linear-gradient(45deg, #ffadc1, #ff9e80, #fcbf49, #a4e057, #64d2ff);
+    background-size: 200% 200%;
+    background-position: 0% 100%;
+    filter: blur(10px);
+  }
+
+  50% {
+    background: linear-gradient(90deg, #ffadc1, #ff9e80, #fcbf49, #a4e057, #64d2ff);
+    background-size: 200% 200%;
+    background-position: 100% 0%;
+    filter: blur(5px);
+  }
+
+  100% {
+    background: linear-gradient(45deg, #ffadc1, #ff9e80, #fcbf49, #a4e057, #64d2ff);
+    background-size: 200% 200%;
+    background-position: 0% 100%;
+    filter: blur(10px);
+  }
+}
+
+.animate-pastel-dream {
+  animation: pastel-dream 5s ease infinite;
+}
+
+@keyframes rose-blush {
+  0% {
+    background: linear-gradient(45deg, #ff446b, #ff7b6b, #ffad7b, #ffda8a);
+    background-size: 200% 200%;
+    background-position: 0% 100%;
+  }
+
+  50% {
+    background: linear-gradient(90deg, #ff446b, #ff7b6b, #ffad7b, #ffda8a);
+    background-size: 200% 200%;
+    background-position: 100% 0%;
+  }
+
+  100% {
+    background: linear-gradient(45deg, #ff446b, #ff7b6b, #ffad7b, #ffda8a);
+    background-size: 200% 200%;
+    background-position: 0% 100%;
+  }
+}
+
+.animate-rose-blush {
+  animation: rose-blush 10s ease infinite;
+}
+
+@keyframes amethyst-midnight {
+  0% {
+    background: radial-gradient(100% 225% at 0 100%, #3a006b 0, #6c0098 100%), linear-gradient(-100deg, #9c00ff 70%, #7500c4 100%), linear-gradient(200deg, #4c4c4c 0, #9300ff 100%), linear-gradient(-3deg, #6c0098 0, #3a006b 50%);
+    background-size: 100% 100%;
+    background-position: 0% 60%;
+    background-blend-mode: color-dodge, color-burn, color-burn, normal;
+  }
+
+  20% {
+    background: radial-gradient(100% 225% at 0 100%, #3a006b 0, #6c0098 100%), linear-gradient(-100deg, #9c00ff 70%, #7500c4 100%), linear-gradient(200deg, #4c4c4c 0, #9300ff 100%), linear-gradient(-3deg, #6c0098 0, #3a006b 50%);
+    background-size: 105% 105%;
+    background-position: 10% 50%;
+    background-blend-mode: color-dodge, color-burn, color-burn, normal;
+  }
+
+  40% {
+    background: radial-gradient(100% 225% at 0 100%, #3a006b 0, #6c0098 100%), linear-gradient(-100deg, #9c00ff 70%, #7500c4 100%), linear-gradient(200deg, #4c4c4c 0, #9300ff 100%), linear-gradient(-3deg, #6c0098 0, #3a006b 50%);
+    background-size: 110% 300%;
+    background-position: 20% 40%;
+    background-blend-mode: color-dodge, color-burn, color-burn, normal;
+  }
+
+  60% {
+    background: radial-gradient(100% 225% at 0 100%, #3a006b 0, #6c0098 100%), linear-gradient(-100deg, #9c00ff 70%, #7500c4 100%), linear-gradient(200deg, #4c4c4c 0, #9300ff 100%), linear-gradient(-3deg, #6c0098 0, #3a006b 50%);
+    background-size: 115% 115%;
+    background-position: 30% 30%;
+    background-blend-mode: color-dodge, color-burn, color-burn, normal;
+  }
+
+  80% {
+    background: radial-gradient(100% 225% at 0 100%, #3a006b 0, #6c0098 100%), linear-gradient(-100deg, #9c00ff 70%, #7500c4 100%), linear-gradient(200deg, #4c4c4c 0, #9300ff 100%), linear-gradient(-3deg, #6c0098 0, #3a006b 50%);
+    background-size: 250% 120%;
+    background-position: 40% 20%;
+    background-blend-mode: color-dodge, color-burn, color-burn, normal;
+  }
+
+  100% {
+    background: radial-gradient(100% 225% at 0 100%, #3a006b 0, #6c0098 100%), linear-gradient(-100deg, #9c00ff 70%, #7500c4 100%), linear-gradient(200deg, #4c4c4c 0, #9300ff 100%), linear-gradient(-3deg, #6c0098 0, #3a006b 50%);
+    background-size: 100% 100%;
+    background-position: 0% 60%;
+    background-blend-mode: color-dodge, color-burn, color-burn, normal;
+  }
+}
+
+.animate-amethyst-midnight {
+  animation: amethyst-midnight 10s ease infinite;
+}
+
+@keyframes cosmic-wave {
+  0% {
+    background: radial-gradient(100% 225% at 0 100%, #0039A6 0, #005EB8 100%), linear-gradient(-45deg, #007BFF 70%, #005EB8 100%), linear-gradient(135deg, #004785 0, #0039A6 100%), linear-gradient(60deg, #005EB8 0, #0039A6 50%);
+    background-size: 100% 100%;
+    background-position: 0% 60%;
+    background-blend-mode: color-dodge, color-burn, color-burn, normal;
+  }
+
+  20% {
+    background: radial-gradient(100% 225% at 0 100%, #0039A6 0, #005EB8 100%), linear-gradient(-45deg, #007BFF 70%, #005EB8 100%), linear-gradient(135deg, #004785 0, #0039A6 100%), linear-gradient(60deg, #005EB8 0, #0039A6 50%);
+    background-size: 105% 105%;
+    background-position: 10% 50%;
+    background-blend-mode: color-dodge, color-burn, color-burn, normal;
+  }
+
+  40% {
+    background: radial-gradient(100% 225% at 0 100%, #0039A6 0, #005EB8 100%), linear-gradient(-45deg, #007BFF 70%, #005EB8 100%), linear-gradient(135deg, #004785 0, #0039A6 100%), linear-gradient(60deg, #005EB8 0, #0039A6 50%);
+    background-size: 110% 300%;
+    background-position: 20% 40%;
+    background-blend-mode: color-dodge, color-burn, color-burn, normal;
+  }
+
+  60% {
+    background: radial-gradient(100% 225% at 0 100%, #0039A6 0, #005EB8 100%), linear-gradient(-45deg, #007BFF 70%, #005EB8 100%), linear-gradient(135deg, #004785 0, #0039A6 100%), linear-gradient(60deg, #005EB8 0, #0039A6 50%);
+    background-size: 115% 115%;
+    background-position: 30% 30%;
+    background-blend-mode: color-dodge, color-burn, color-burn, normal;
+  }
+
+  80% {
+    background: radial-gradient(100% 225% at 0 100%, #0039A6 0, #005EB8 100%), linear-gradient(-45deg, #007BFF 70%, #005EB8 100%), linear-gradient(135deg, #004785 0, #0039A6 100%), linear-gradient(60deg, #005EB8 0, #0039A6 50%);
+    background-size: 250% 120%;
+    background-position: 40% 20%;
+    background-blend-mode: color-dodge, color-burn, color-burn, normal;
+  }
+
+  100% {
+    background: radial-gradient(100% 225% at 0 100%, #0039A6 0, #005EB8 100%), linear-gradient(-45deg, #007BFF 70%, #005EB8 100%), linear-gradient(135deg, #004785 0, #0039A6 100%), linear-gradient(60deg, #005EB8 0, #0039A6 50%);
+    background-size: 100% 100%;
+    background-position: 0% 60%;
+    background-blend-mode: color-dodge, color-burn, color-burn, normal;
+  }
+}
+
+.animate-cosmic-wave {
+  animation: cosmic-wave 5s ease infinite;
+}
+
+@keyframes glow-next-door {
+  0% {
+    background: radial-gradient(100% 225% at 0 100%, #62004F 0, #8C007B 100%), linear-gradient(-135deg, #BF00FF 70%, #9600C9 100%), linear-gradient(45deg, #4C4C4C 0, #BF00FF 100%), linear-gradient(-60deg, #8C007B 0, #62004F 50%);
+    background-size: 100% 100%;
+    background-position: 0% 60%;
+    background-blend-mode: color-dodge, color-burn, color-burn, normal;
+  }
+
+  20% {
+    background: radial-gradient(100% 225% at 0 100%, #62004F 0, #8C007B 100%), linear-gradient(-135deg, #BF00FF 70%, #9600C9 100%), linear-gradient(45deg, #4C4C4C 0, #BF00FF 100%), linear-gradient(-60deg, #8C007B 0, #62004F 50%);
+    background-size: 105% 105%;
+    background-position: 10% 50%;
+    background-blend-mode: color-dodge, color-burn, color-burn, normal;
+  }
+
+  40% {
+    background: radial-gradient(100% 225% at 0 100%, #62004F 0, #8C007B 100%), linear-gradient(-135deg, #BF00FF 70%, #9600C9 100%), linear-gradient(45deg, #4C4C4C 0, #BF00FF 100%), linear-gradient(-60deg, #8C007B 0, #62004F 50%);
+    background-size: 110% 300%;
+    background-position: 20% 40%;
+    background-blend-mode: color-dodge, color-burn, color-burn, normal;
+  }
+
+  60% {
+    background: radial-gradient(100% 225% at 0 100%, #62004F 0, #8C007B 100%), linear-gradient(-135deg, #BF00FF 70%, #9600C9 100%), linear-gradient(45deg, #4C4C4C 0, #BF00FF 100%), linear-gradient(-60deg, #8C007B 0, #62004F 50%);
+    background-size: 115% 115%;
+    background-position: 30% 30%;
+    background-blend-mode: color-dodge, color-burn, color-burn, normal;
+  }
+
+  80% {
+    background: radial-gradient(100% 225% at 0 100%, #62004F 0, #8C007B 100%), linear-gradient(-135deg, #BF00FF 70%, #9600C9 100%), linear-gradient(45deg, #4C4C4C 0, #BF00FF 100%), linear-gradient(-60deg, #8C007B 0, #62004F 50%);
+    background-size: 250% 120%;
+    background-position: 40% 20%;
+    background-blend-mode: color-dodge, color-burn, color-burn, normal;
+  }
+
+  100% {
+    background: radial-gradient(100% 225% at 0 100%, #62004F 0, #8C007B 100%), linear-gradient(-135deg, #BF00FF 70%, #9600C9 100%), linear-gradient(45deg, #4C4C4C 0, #BF00FF 100%), linear-gradient(-60deg, #8C007B 0, #62004F 50%);
+    background-size: 100% 100%;
+    background-position: 0% 60%;
+    background-blend-mode: color-dodge, color-burn, color-burn, normal;
+  }
+}
+
+.animate-glow-next-door {
+  animation: glow-next-door 5s ease infinite;
+}
+
+@keyframes lavender-dream {
+  0% {
+    background: linear-gradient(-45deg, #a96dc5, #8f7fc7, #7091c8, #49a3c9);
+    background-size: 200% 200%;
+    background-position: 0% 100%;
+  }
+
+  50% {
+    background: linear-gradient(-90deg, #a96dc5, #8f7fc7, #7091c8, #49a3c9);
+    background-size: 200% 200%;
+    background-position: 100% 0%;
+  }
+
+  100% {
+    background: linear-gradient(-45deg, #a96dc5, #8f7fc7, #7091c8, #49a3c9);
+    background-size: 200% 200%;
+    background-position: 0% 100%;
+  }
+}
+
+.animate-lavender-dream {
+  animation: lavender-dream 5s ease infinite;
+}
+
+@keyframes pink-blossom {
+  0% {
+    background: radial-gradient(100% 225% at 0 100%, #FFB6C1 0, #FF69B4 100%), linear-gradient(-100deg, #FFC0CB 70%, #FF1493 100%), linear-gradient(200deg, #FFC0CB 0, #FF69B4 100%), linear-gradient(-3deg, #FF69B4 0, #FFB6C1 50%);
+    background-size: 100% 100%;
+    background-position: 0% 60%;
+    background-blend-mode: color-dodge, color-burn, color-burn, normal;
+  }
+
+  20% {
+    background: radial-gradient(100% 225% at 0 100%, #FFB6C1 0, #FF69B4 100%), linear-gradient(-100deg, #FFC0CB 70%, #FF1493 100%), linear-gradient(200deg, #FFC0CB 0, #FF69B4 100%), linear-gradient(-3deg, #FF69B4 0, #FFB6C1 50%);
+    background-size: 105% 105%;
+    background-position: 10% 50%;
+    background-blend-mode: color-dodge, color-burn, color-burn, normal;
+  }
+
+  40% {
+    background: radial-gradient(100% 225% at 0 100%, #FFB6C1 0, #FF69B4 100%), linear-gradient(-100deg, #FFC0CB 70%, #FF1493 100%), linear-gradient(200deg, #FFC0CB 0, #FF69B4 100%), linear-gradient(-3deg, #FF69B4 0, #FFB6C1 50%);
+    background-size: 110% 300%;
+    background-position: 20% 40%;
+    background-blend-mode: color-dodge, color-burn, color-burn, normal;
+  }
+
+  60% {
+    background: radial-gradient(100% 225% at 0 100%, #FFB6C1 0, #FF69B4 100%), linear-gradient(-100deg, #FFC0CB 70%, #FF1493 100%), linear-gradient(200deg, #FFC0CB 0, #FF69B4 100%), linear-gradient(-3deg, #FF69B4 0, #FFB6C1 50%);
+    background-size: 115% 115%;
+    background-position: 30% 30%;
+    background-blend-mode: color-dodge, color-burn, color-burn, normal;
+  }
+
+  80% {
+    background: radial-gradient(100% 225% at 0 100%, #FFB6C1 0, #FF69B4 100%), linear-gradient(-100deg, #FFC0CB 70%, #FF1493 100%), linear-gradient(200deg, #FFC0CB 0, #FF69B4 100%), linear-gradient(-3deg, #FF69B4 0, #FFB6C1 50%);
+    background-size: 250% 120%;
+    background-position: 40% 20%;
+    background-blend-mode: color-dodge, color-burn, color-burn, normal;
+  }
+
+  100% {
+    background: radial-gradient(100% 225% at 0 100%, #FFB6C1 0, #FF69B4 100%), linear-gradient(-100deg, #FFC0CB 70%, #FF1493 100%), linear-gradient(200deg, #FFC0CB 0, #FF69B4 100%), linear-gradient(-3deg, #FF69B4 0, #FFB6C1 50%);
+    background-size: 100% 100%;
+    background-position: 0% 60%;
+    background-blend-mode: color-dodge, color-burn, color-burn, normal;
+  }
+}
+
+.animate-pink-blossom {
+  animation: pink-blossom 5s ease infinite;
+}
+
+@keyframes ski-haze {
+  0% {
+    background: radial-gradient(100% 225% at 0 100%, #008033 0, #00551a 100%), linear-gradient(-45deg, #007BFF 70%, #005EB8 100%), linear-gradient(135deg, #004D26 0, #003300 100%), linear-gradient(60deg, #00551A 0, #003300 50%);
+    background-size: 100% 100%;
+    background-position: 0% 60%;
+    background-blend-mode: color-dodge, normal, normal, normal;
+  }
+
+  20% {
+    background: radial-gradient(100% 225% at 0 100%, #008033 0, #00551a 100%), linear-gradient(-45deg, #007BFF 70%, #005EB8 100%), linear-gradient(135deg, #004D26 0, #003300 100%), linear-gradient(60deg, #00551A 0, #003300 50%);
+    background-size: 105% 105%;
+    background-position: 10% 50%;
+    background-blend-mode: color-dodge, normal, normal, normal;
+  }
+
+  40% {
+    background: radial-gradient(100% 225% at 0 100%, #008033 0, #00551a 100%), linear-gradient(-45deg, #007BFF 70%, #005EB8 100%), linear-gradient(135deg, #004D26 0, #003300 100%), linear-gradient(60deg, #00551A 0, #003300 50%);
+    background-size: 110% 300%;
+    background-position: 20% 40%;
+    background-blend-mode: color-dodge, normal, normal, normal;
+  }
+
+  60% {
+    background: radial-gradient(100% 225% at 0 100%, #008033 0, #00551a 100%), linear-gradient(-45deg, #007BFF 70%, #005EB8 100%), linear-gradient(135deg, #004D26 0, #003300 100%), linear-gradient(60deg, #00551A 0, #003300 50%);
+    background-size: 115% 115%;
+    background-position: 30% 30%;
+    background-blend-mode: color-dodge, normal, normal, normal;
+  }
+
+  80% {
+    background: radial-gradient(100% 225% at 0 100%, #008033 0, #00551a 100%), linear-gradient(-45deg, #007BFF 70%, #005EB8 100%), linear-gradient(135deg, #004D26 0, #003300 100%), linear-gradient(60deg, #00551A 0, #003300 50%);
+    background-size: 250% 120%;
+    background-position: 40% 20%;
+    background-blend-mode: color-dodge, normal, normal, normal;
+  }
+
+  100% {
+    background: radial-gradient(100% 225% at 0 100%, #008033 0, #00551a 100%), linear-gradient(-45deg, #007BFF 70%, #005EB8 100%), linear-gradient(135deg, #004D26 0, #003300 100%), linear-gradient(60deg, #00551A 0, #003300 50%);
+    background-size: 100% 100%;
+    background-position: 0% 60%;
+    background-blend-mode: color-dodge, normal, normal, normal;
+  }
+}
+
+.animate-ski-haze {
+  animation: ski-haze 5s ease infinite;
+}
+
+.animate-violet-dusk {
+  animation: violet-dusk 10s ease infinite;
 }
 
 .grid-cols-1 {
