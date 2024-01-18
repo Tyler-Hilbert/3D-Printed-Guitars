@@ -1,230 +1,487 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <!-- Website Title  -->
     <title>3D Printable Guitars</title>
 
     <!-- Tailwind  -->
-    <link href="output.css" rel="stylesheet">
+    <link href="output.css" rel="stylesheet" />
 
     <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-JCF83N8DTG"></script>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-JCF83N8DTG"
+    ></script>
     <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-JCF83N8DTG');
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-JCF83N8DTG");
     </script>
 
     <!--  -->
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-</head>
-<body class="animate-serene-sunset">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body class="animate-serene-sunset">
     <!-- Sound lol -->
     <script>
-        var audio = new Audio("https://raw.githubusercontent.com/Tyler-Hilbert/3D-Printed-Guitars/main/sound.mp3")
-        audio.play()
+      var hasPlayed = false;
+      var audio = new Audio(
+        "https://raw.githubusercontent.com/Tyler-Hilbert/3D-Printed-Guitars/main/sound.mp3"
+      );
+      function playAudio() {
+        // This func will check if the file hasPlayed and then will disable after first interaction.
+        if (!hasPlayed) {
+          audio.play();
+          hasPlayed = true;
+        }
+      }
+      document.addEventListener("click", playAudio);
     </script>
-    
+
     <!-- The actual webpage -->
     <div class="container mx-auto p-4 animate-black-swoosh rounded-3xl my-2">
-        <h1 class="text-6xl font-semibold mb-16 font-cursive">3D Printable Guitars</h1>
+      <h1 class="text-6xl font-semibold mb-16 font-cursive">
+        3D Printable Guitars
+      </h1>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-1">
-
-            <div class="max-w-sm rounded overflow-hidden shadow-lg animate-diagonal-rotating-sun">
-                <img class="w-full" src="https://link.storjshare.io/s/jx6wzjwuhfdzbxvdsx2pygvpen4a/guitars%2F1.jpeg?wrap=0" alt="Prusacaster">
-                <div class="px-6 py-4">
-                    <div class="font-bold text-xl mb-2">Prusacaster</div>
-                    <p class="text-gray-700 text-base">The Prusacaster – How to Design and 3D Print an Electric Guitar that plays well <$150</p>
-                </div>
-                <div class="px-6 pt-4 pb-2">
-                    <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">Pickups: ss</span>
-                    <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">Body: Jaguar</span>
-                    <a href="https://www.printables.com/model/398795-the-prusacaster-a-3d-printable-guitar" class="text-blue-500 hover:underline">get</a>
-                </div>
-            </div>
-            
-            <div class="max-w-sm rounded overflow-hidden shadow-lg animate-rainbow-river">
-                <img class="w-full" src="https://drscdn.500px.org/photo/1083189169/q%3D80_m%3D600/v2?sig=84a431a041a9cc0c2f916388c6f378d1289cfd0715bfe3d4e61244836314f047" alt="3D Printing a Guitar">
-                <div class="px-6 py-4">
-                    <div class="font-bold text-xl mb-2">3D Printing a Guitar</div>
-                    <p class="text-gray-700 text-base"></p>
-                </div>
-                <div class="px-6 pt-4 pb-2">
-                    <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">Pickups: sss</span>
-                    <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">Body: Strat</span>
-                    <a href="https://www.gad.net/Blog/2020/04/05/3d-printed-guitar/" class="text-blue-500 hover:underline">get</a>
-                </div>
-            </div>
-            
-            <div class="max-w-sm rounded overflow-hidden shadow-lg animate-diagonal-rotating-sun">
-                <img class="w-full" src="https://drscdn.500px.org/photo/1083189176/q%3D80_m%3D600/v2?sig=d9f6124027ef12174c81b5fc7e7f71557937ce7e95cc4c8f1ad14e117a893477" alt="The Tikicaster">
-                <div class="px-6 py-4">
-                    <div class="font-bold text-xl mb-2">The Tikicaster</div>
-                    <p class="text-gray-700 text-base">This is my take on the Telecaster Thinline, Fender's brief foray into the world of hollow body electrics.  The body is built the same way as  the original.  The back, middle and front sections stack up, allowing you to print a hollow body with finish surfaces on both the front and back, and no support.</p>
-                </div>
-                <div class="px-6 pt-4 pb-2">
-                    <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">Body: Telecaster</span>
-                    <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">Pickups: ss</span>
-                    <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">Instrument: Semi-Acoustic Electric Guitar</span>
-                    <a href="https://www.thingiverse.com/thing:890969" class="text-blue-500 hover:underline">get</a>
-                </div>
-            </div>
-            
-            <div class="max-w-sm rounded overflow-hidden shadow-lg animate-rainbow-river">
-                <img class="w-full" src="https://drscdn.500px.org/photo/1083189178/q%3D80_m%3D600/v2?sig=98864b49a402c16aa9d5fccc97c71c7838898989310700b59b038486c7b70dcb" alt="Shapespeare">
-                <div class="px-6 py-4">
-                    <div class="font-bold text-xl mb-2">Shapespeare</div>
-                    <p class="text-gray-700 text-base"></p>
-                </div>
-                <div class="px-6 pt-4 pb-2">
-                    <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">Body: ES</span>
-                    <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">Pickups: s</span>
-                    <a href="https://www.thingiverse.com/thing:493550" class="text-blue-500 hover:underline">get</a>
-                </div>
-            </div>
-            
-            <div class="max-w-sm rounded overflow-hidden shadow-lg animate-diagonal-rotating-sun">
-                <img class="w-full" src="https://drscdn.500px.org/photo/1083189182/q%3D80_m%3D600/v2?sig=de6dd2f67b913c491944c3b4921db9c266aead4da25d819acf07f305612a21e7" alt="Bear-u-lele">
-                <div class="px-6 py-4">
-                    <div class="font-bold text-xl mb-2">Bear-u-lele</div>
-                    <p class="text-gray-700 text-base">The Ukulele with a Bear Head!</p>
-                </div>
-                <div class="px-6 pt-4 pb-2">
-                    <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">Instrument: Ukulele</span>
-                    <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">Strings: 4</span>
-                    <a href="https://www.thingiverse.com/thing:397075" class="text-blue-500 hover:underline">get</a>
-                </div>
-            </div>
-            
-            <div class="max-w-sm rounded overflow-hidden shadow-lg animate-rainbow-river">
-                <img class="w-full" src="https://drscdn.500px.org/photo/1083189184/q%3D80_m%3D600/v2?sig=d329443ec0f31e3e2a36972b4c31e94cd30ec5eefc8cc29908c776fa30fa534c" alt="AMGP (Adapto Modular Guitar Pro)">
-                <div class="px-6 py-4">
-                    <div class="font-bold text-xl mb-2">AMGP (Adapto Modular Guitar Pro)</div>
-                    <p class="text-gray-700 text-base">This is a 3D printable modular guitar system.</p>
-                </div>
-                <div class="px-6 pt-4 pb-2">
-                    <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">Body: Modular</span>
-                    <a href="https://www.thingiverse.com/thing:478982" class="text-blue-500 hover:underline">get</a>
-                </div>
-            </div>
-            
-            <div class="max-w-sm rounded overflow-hidden shadow-lg animate-diagonal-rotating-sun">
-                <img class="w-full" src="https://drscdn.500px.org/photo/1083189185/q%3D80_m%3D600/v2?sig=9f6a1bc4ba93f588380ffdf6ead267606af444ce95ff7112ba64ef0428a1e46f" alt="Etxaniz">
-                <div class="px-6 py-4">
-                    <div class="font-bold text-xl mb-2">Etxaniz</div>
-                    <p class="text-gray-700 text-base">Strandberg ELECTRIC GUITAR</p>
-                </div>
-                <div class="px-6 pt-4 pb-2">
-                    <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">Body: Boden</span>
-                    <a href="https://www.thingiverse.com/thing:3046322" class="text-blue-500 hover:underline">get</a>
-                </div>
-            </div>
-            
-            <div class="max-w-sm rounded overflow-hidden shadow-lg animate-rainbow-river">
-                <img class="w-full" src="https://drscdn.500px.org/photo/1083189186/q%3D80_m%3D600/v2?sig=612f9639245f1a7243ab262ff1d4ee441879eafc5f932e508469e37f6ca2dbc0" alt="Calgon">
-                <div class="px-6 py-4">
-                    <div class="font-bold text-xl mb-2">Calgon</div>
-                    <p class="text-gray-700 text-base">Boden like guitar. I'd modified the Ergonomic Guitar by superwoodle.( thank you !)</p>
-                </div>
-                <div class="px-6 pt-4 pb-2">
-                    <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">Body: Boden</span>
-                    <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">Bridge: Headless</span>
-                    <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">Pickups: h</span>
-                    <a href="https://www.thingiverse.com/thing:4667569" class="text-blue-500 hover:underline">get</a>
-                </div>
-            </div>
-            
-            <div class="max-w-sm rounded overflow-hidden shadow-lg animate-diagonal-rotating-sun">
-                <img class="w-full" src="https://drscdn.500px.org/photo/1083189193/q%3D80_m%3D600/v2?sig=5ee10813503ff006f0d56d44c42fbdf742cd4402ae2d176a7a8712f3c8e5cdb7" alt="The Lapwing Leftie">
-                <div class="px-6 py-4">
-                    <div class="font-bold text-xl mb-2">The Lapwing Leftie</div>
-                    <p class="text-gray-700 text-base">Left Handed version of my previous guitar design.</p>
-                </div>
-                <div class="px-6 pt-4 pb-2">
-                    <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">Handed: Left</span>
-                    <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">Pickups: sss</span>
-                    <a href="https://www.thingiverse.com/thing:5212827" class="text-blue-500 hover:underline">get</a>
-                </div>
-            </div>
-            
-            <div class="max-w-sm rounded overflow-hidden shadow-lg animate-rainbow-river">
-                <img class="w-full" src="imgs/67.JPG" alt="XDr4g0nX">
-                <div class="px-6 py-4">
-                    <div class="font-bold text-xl mb-2">XDr4g0nX</div>
-                    <p class="text-gray-700 text-base"></p>
-                </div>
-                <div class="px-6 pt-4 pb-2">
-                    <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">Instrument: Electric Bass</span>
-                    <a href="https://www.thingiverse.com/thing:2476882" class="text-blue-500 hover:underline font-bold">get</a>
-                </div>
-            </div>
-            
-            <div class="max-w-sm rounded overflow-hidden shadow-lg animate-diagonal-rotating-sun">
-                <img class="w-full" src="imgs/68.jpg" alt="Polycaster">
-                <div class="px-6 py-4">
-                    <div class="font-bold text-xl mb-2">Polycaster</div>
-                    <p class="text-gray-700 text-base"></p>
-                </div>
-                <div class="px-6 pt-4 pb-2">
-                    <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">Pickups: sss</span>
-                    <a href="https://www.thingiverse.com/thing:4205403" class="text-blue-500 hover:underline">get</a>
-                </div>
-            </div>
-            
-            <div class="max-w-sm rounded overflow-hidden shadow-lg animate-rainbow-river">
-                <img class="w-full" src="imgs/71.jpg" alt="Coffin Bass">
-                <div class="px-6 py-4">
-                    <div class="font-bold text-xl mb-2">Coffin Bass</div>
-                    <p class="text-gray-700 text-base">converted to an electric guitar</p>
-                </div>
-                <div class="px-6 pt-4 pb-2">
-                    <a href="https://www.thingiverse.com/thing:5586810" class="text-blue-500 hover:underline">get</a>
-                </div>
-            </div>
-            
-            <div class="max-w-sm rounded overflow-hidden shadow-lg animate-diagonal-rotating-sun">
-                <img class="w-full" src="imgs/79.jpg" alt="Headless Guitar">
-                <div class="px-6 py-4">
-                    <div class="font-bold text-xl mb-2">Headless Guitar</div>
-                    <p class="text-gray-700 text-base">I remixed the strandberg style guitar to utilize easily available parts from ebay/Walmart/Ali or other retail places that have cheap prices for parts. This particular remix is modified to utilize the fixed headless bridge that is black with brass parts and has a little crank handle. It also comes with the thing for the top of the Neck.</p>
-                </div>
-                <div class="px-6 pt-4 pb-2">
-                    <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">Body: Boden</span>
-                    <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">Pickups: hh</span>
-                    <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">Bridge: Headless</span>
-                    <a href="https://www.thingiverse.com/thing:5264342" class="text-blue-500 hover:underline">get</a>
-                </div>
-            </div>
-
-            <div class="max-w-sm rounded overflow-hidden shadow-lg animate-rainbow-river">
-                <img class="w-full" src="imgs/33.jpg" alt="Solstie">
-                <div class="px-6 py-4">
-                    <div class="font-bold text-xl mb-2">Solstie</div>
-                    <p class="text-gray-700 text-base">This is a 3D printable guitar! The whole thing is printed. You don't need anything else but some super glue to assemble the guitar. Add some strings and standard guitar tuning machines and you're done! It is about 3/4 scale and is very playable. See a video and hear what it sounds like here: http://youtu.be/_2lzZFKssrQ</p>
-                </div>
-                <div class="px-6 pt-4 pb-2">
-                    <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">Size: Travel Size</span>
-                    <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">Instrument: Acoustic Guitar</span>
-                    <a href="https://www.thingiverse.com/thing:486731" class="text-blue-500 hover:underline">get</a>
-                </div>
-            </div>
-            
-            <div class="max-w-sm rounded overflow-hidden shadow-lg animate-diagonal-rotating-sun">
-                <img class="w-full" src="imgs/35.jpg" alt="Black Widow">
-                <div class="px-6 py-4">
-                    <div class="font-bold text-xl mb-2">Black Widow</div>
-                    <p class="text-gray-700 text-base">SHOWCASED @ CES 2016!!!</p>
-                </div>
-                <div class="px-6 pt-4 pb-2">
-                    <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">Body: LP</span>
-                    <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">Pickups: sss</span>
-                    <a href="https://www.thingiverse.com/thing:1068688" class="text-blue-500 hover:underline">get</a>
-                </div>
-            </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-1">
+        <div
+          class="max-w-sm rounded overflow-hidden shadow-lg animate-diagonal-rotating-sun"
+        >
+          <img
+            class="w-full"
+            src="https://link.storjshare.io/s/jx6wzjwuhfdzbxvdsx2pygvpen4a/guitars%2F1.jpeg?wrap=0"
+            alt="Prusacaster"
+          />
+          <div class="px-6 py-4">
+            <div class="font-bold text-xl mb-2">Prusacaster</div>
+            <p class="text-gray-700 text-base">
+              The Prusacaster – How to Design and 3D Print an Electric Guitar
+              that plays well <$150
+            </p>
+          </div>
+          <div class="px-6 pt-4 pb-2">
+            <span
+              class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2"
+              >Pickups: ss</span
+            >
+            <span
+              class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2"
+              >Body: Jaguar</span
+            >
+            <a
+              href="https://www.printables.com/model/398795-the-prusacaster-a-3d-printable-guitar"
+              class="text-blue-500 hover:underline"
+              >get</a
+            >
+          </div>
         </div>
-    </div> 
-</body>
+
+        <div
+          class="max-w-sm rounded overflow-hidden shadow-lg animate-rainbow-river"
+        >
+          <img
+            class="w-full"
+            src="https://drscdn.500px.org/photo/1083189169/q%3D80_m%3D600/v2?sig=84a431a041a9cc0c2f916388c6f378d1289cfd0715bfe3d4e61244836314f047"
+            alt="3D Printing a Guitar"
+          />
+          <div class="px-6 py-4">
+            <div class="font-bold text-xl mb-2">3D Printing a Guitar</div>
+            <p class="text-gray-700 text-base"></p>
+          </div>
+          <div class="px-6 pt-4 pb-2">
+            <span
+              class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2"
+              >Pickups: sss</span
+            >
+            <span
+              class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2"
+              >Body: Strat</span
+            >
+            <a
+              href="https://www.gad.net/Blog/2020/04/05/3d-printed-guitar/"
+              class="text-blue-500 hover:underline"
+              >get</a
+            >
+          </div>
+        </div>
+
+        <div
+          class="max-w-sm rounded overflow-hidden shadow-lg animate-diagonal-rotating-sun"
+        >
+          <img
+            class="w-full"
+            src="https://drscdn.500px.org/photo/1083189176/q%3D80_m%3D600/v2?sig=d9f6124027ef12174c81b5fc7e7f71557937ce7e95cc4c8f1ad14e117a893477"
+            alt="The Tikicaster"
+          />
+          <div class="px-6 py-4">
+            <div class="font-bold text-xl mb-2">The Tikicaster</div>
+            <p class="text-gray-700 text-base">
+              This is my take on the Telecaster Thinline, Fender's brief foray
+              into the world of hollow body electrics. The body is built the
+              same way as the original. The back, middle and front sections
+              stack up, allowing you to print a hollow body with finish surfaces
+              on both the front and back, and no support.
+            </p>
+          </div>
+          <div class="px-6 pt-4 pb-2">
+            <span
+              class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2"
+              >Body: Telecaster</span
+            >
+            <span
+              class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2"
+              >Pickups: ss</span
+            >
+            <span
+              class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2"
+              >Instrument: Semi-Acoustic Electric Guitar</span
+            >
+            <a
+              href="https://www.thingiverse.com/thing:890969"
+              class="text-blue-500 hover:underline"
+              >get</a
+            >
+          </div>
+        </div>
+
+        <div
+          class="max-w-sm rounded overflow-hidden shadow-lg animate-rainbow-river"
+        >
+          <img
+            class="w-full"
+            src="https://drscdn.500px.org/photo/1083189178/q%3D80_m%3D600/v2?sig=98864b49a402c16aa9d5fccc97c71c7838898989310700b59b038486c7b70dcb"
+            alt="Shapespeare"
+          />
+          <div class="px-6 py-4">
+            <div class="font-bold text-xl mb-2">Shapespeare</div>
+            <p class="text-gray-700 text-base"></p>
+          </div>
+          <div class="px-6 pt-4 pb-2">
+            <span
+              class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2"
+              >Body: ES</span
+            >
+            <span
+              class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2"
+              >Pickups: s</span
+            >
+            <a
+              href="https://www.thingiverse.com/thing:493550"
+              class="text-blue-500 hover:underline"
+              >get</a
+            >
+          </div>
+        </div>
+
+        <div
+          class="max-w-sm rounded overflow-hidden shadow-lg animate-diagonal-rotating-sun"
+        >
+          <img
+            class="w-full"
+            src="https://drscdn.500px.org/photo/1083189182/q%3D80_m%3D600/v2?sig=de6dd2f67b913c491944c3b4921db9c266aead4da25d819acf07f305612a21e7"
+            alt="Bear-u-lele"
+          />
+          <div class="px-6 py-4">
+            <div class="font-bold text-xl mb-2">Bear-u-lele</div>
+            <p class="text-gray-700 text-base">The Ukulele with a Bear Head!</p>
+          </div>
+          <div class="px-6 pt-4 pb-2">
+            <span
+              class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2"
+              >Instrument: Ukulele</span
+            >
+            <span
+              class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2"
+              >Strings: 4</span
+            >
+            <a
+              href="https://www.thingiverse.com/thing:397075"
+              class="text-blue-500 hover:underline"
+              >get</a
+            >
+          </div>
+        </div>
+
+        <div
+          class="max-w-sm rounded overflow-hidden shadow-lg animate-rainbow-river"
+        >
+          <img
+            class="w-full"
+            src="https://drscdn.500px.org/photo/1083189184/q%3D80_m%3D600/v2?sig=d329443ec0f31e3e2a36972b4c31e94cd30ec5eefc8cc29908c776fa30fa534c"
+            alt="AMGP (Adapto Modular Guitar Pro)"
+          />
+          <div class="px-6 py-4">
+            <div class="font-bold text-xl mb-2">
+              AMGP (Adapto Modular Guitar Pro)
+            </div>
+            <p class="text-gray-700 text-base">
+              This is a 3D printable modular guitar system.
+            </p>
+          </div>
+          <div class="px-6 pt-4 pb-2">
+            <span
+              class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2"
+              >Body: Modular</span
+            >
+            <a
+              href="https://www.thingiverse.com/thing:478982"
+              class="text-blue-500 hover:underline"
+              >get</a
+            >
+          </div>
+        </div>
+
+        <div
+          class="max-w-sm rounded overflow-hidden shadow-lg animate-diagonal-rotating-sun"
+        >
+          <img
+            class="w-full"
+            src="https://drscdn.500px.org/photo/1083189185/q%3D80_m%3D600/v2?sig=9f6a1bc4ba93f588380ffdf6ead267606af444ce95ff7112ba64ef0428a1e46f"
+            alt="Etxaniz"
+          />
+          <div class="px-6 py-4">
+            <div class="font-bold text-xl mb-2">Etxaniz</div>
+            <p class="text-gray-700 text-base">Strandberg ELECTRIC GUITAR</p>
+          </div>
+          <div class="px-6 pt-4 pb-2">
+            <span
+              class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2"
+              >Body: Boden</span
+            >
+            <a
+              href="https://www.thingiverse.com/thing:3046322"
+              class="text-blue-500 hover:underline"
+              >get</a
+            >
+          </div>
+        </div>
+
+        <div
+          class="max-w-sm rounded overflow-hidden shadow-lg animate-rainbow-river"
+        >
+          <img
+            class="w-full"
+            src="https://drscdn.500px.org/photo/1083189186/q%3D80_m%3D600/v2?sig=612f9639245f1a7243ab262ff1d4ee441879eafc5f932e508469e37f6ca2dbc0"
+            alt="Calgon"
+          />
+          <div class="px-6 py-4">
+            <div class="font-bold text-xl mb-2">Calgon</div>
+            <p class="text-gray-700 text-base">
+              Boden like guitar. I'd modified the Ergonomic Guitar by
+              superwoodle.( thank you !)
+            </p>
+          </div>
+          <div class="px-6 pt-4 pb-2">
+            <span
+              class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2"
+              >Body: Boden</span
+            >
+            <span
+              class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2"
+              >Bridge: Headless</span
+            >
+            <span
+              class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2"
+              >Pickups: h</span
+            >
+            <a
+              href="https://www.thingiverse.com/thing:4667569"
+              class="text-blue-500 hover:underline"
+              >get</a
+            >
+          </div>
+        </div>
+
+        <div
+          class="max-w-sm rounded overflow-hidden shadow-lg animate-diagonal-rotating-sun"
+        >
+          <img
+            class="w-full"
+            src="https://drscdn.500px.org/photo/1083189193/q%3D80_m%3D600/v2?sig=5ee10813503ff006f0d56d44c42fbdf742cd4402ae2d176a7a8712f3c8e5cdb7"
+            alt="The Lapwing Leftie"
+          />
+          <div class="px-6 py-4">
+            <div class="font-bold text-xl mb-2">The Lapwing Leftie</div>
+            <p class="text-gray-700 text-base">
+              Left Handed version of my previous guitar design.
+            </p>
+          </div>
+          <div class="px-6 pt-4 pb-2">
+            <span
+              class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2"
+              >Handed: Left</span
+            >
+            <span
+              class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2"
+              >Pickups: sss</span
+            >
+            <a
+              href="https://www.thingiverse.com/thing:5212827"
+              class="text-blue-500 hover:underline"
+              >get</a
+            >
+          </div>
+        </div>
+
+        <div
+          class="max-w-sm rounded overflow-hidden shadow-lg animate-rainbow-river"
+        >
+          <img class="w-full" src="imgs/67.JPG" alt="XDr4g0nX" />
+          <div class="px-6 py-4">
+            <div class="font-bold text-xl mb-2">XDr4g0nX</div>
+            <p class="text-gray-700 text-base"></p>
+          </div>
+          <div class="px-6 pt-4 pb-2">
+            <span
+              class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2"
+              >Instrument: Electric Bass</span
+            >
+            <a
+              href="https://www.thingiverse.com/thing:2476882"
+              class="text-blue-500 hover:underline font-bold"
+              >get</a
+            >
+          </div>
+        </div>
+
+        <div
+          class="max-w-sm rounded overflow-hidden shadow-lg animate-diagonal-rotating-sun"
+        >
+          <img class="w-full" src="imgs/68.jpg" alt="Polycaster" />
+          <div class="px-6 py-4">
+            <div class="font-bold text-xl mb-2">Polycaster</div>
+            <p class="text-gray-700 text-base"></p>
+          </div>
+          <div class="px-6 pt-4 pb-2">
+            <span
+              class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2"
+              >Pickups: sss</span
+            >
+            <a
+              href="https://www.thingiverse.com/thing:4205403"
+              class="text-blue-500 hover:underline"
+              >get</a
+            >
+          </div>
+        </div>
+
+        <div
+          class="max-w-sm rounded overflow-hidden shadow-lg animate-rainbow-river"
+        >
+          <img class="w-full" src="imgs/71.jpg" alt="Coffin Bass" />
+          <div class="px-6 py-4">
+            <div class="font-bold text-xl mb-2">Coffin Bass</div>
+            <p class="text-gray-700 text-base">
+              converted to an electric guitar
+            </p>
+          </div>
+          <div class="px-6 pt-4 pb-2">
+            <a
+              href="https://www.thingiverse.com/thing:5586810"
+              class="text-blue-500 hover:underline"
+              >get</a
+            >
+          </div>
+        </div>
+
+        <div
+          class="max-w-sm rounded overflow-hidden shadow-lg animate-diagonal-rotating-sun"
+        >
+          <img class="w-full" src="imgs/79.jpg" alt="Headless Guitar" />
+          <div class="px-6 py-4">
+            <div class="font-bold text-xl mb-2">Headless Guitar</div>
+            <p class="text-gray-700 text-base">
+              I remixed the strandberg style guitar to utilize easily available
+              parts from ebay/Walmart/Ali or other retail places that have cheap
+              prices for parts. This particular remix is modified to utilize the
+              fixed headless bridge that is black with brass parts and has a
+              little crank handle. It also comes with the thing for the top of
+              the Neck.
+            </p>
+          </div>
+          <div class="px-6 pt-4 pb-2">
+            <span
+              class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2"
+              >Body: Boden</span
+            >
+            <span
+              class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2"
+              >Pickups: hh</span
+            >
+            <span
+              class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2"
+              >Bridge: Headless</span
+            >
+            <a
+              href="https://www.thingiverse.com/thing:5264342"
+              class="text-blue-500 hover:underline"
+              >get</a
+            >
+          </div>
+        </div>
+
+        <div
+          class="max-w-sm rounded overflow-hidden shadow-lg animate-rainbow-river"
+        >
+          <img class="w-full" src="imgs/33.jpg" alt="Solstie" />
+          <div class="px-6 py-4">
+            <div class="font-bold text-xl mb-2">Solstie</div>
+            <p class="text-gray-700 text-base">
+              This is a 3D printable guitar! The whole thing is printed. You
+              don't need anything else but some super glue to assemble the
+              guitar. Add some strings and standard guitar tuning machines and
+              you're done! It is about 3/4 scale and is very playable. See a
+              video and hear what it sounds like here:
+              http://youtu.be/_2lzZFKssrQ
+            </p>
+          </div>
+          <div class="px-6 pt-4 pb-2">
+            <span
+              class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2"
+              >Size: Travel Size</span
+            >
+            <span
+              class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2"
+              >Instrument: Acoustic Guitar</span
+            >
+            <a
+              href="https://www.thingiverse.com/thing:486731"
+              class="text-blue-500 hover:underline"
+              >get</a
+            >
+          </div>
+        </div>
+
+        <div
+          class="max-w-sm rounded overflow-hidden shadow-lg animate-diagonal-rotating-sun"
+        >
+          <img class="w-full" src="imgs/35.jpg" alt="Black Widow" />
+          <div class="px-6 py-4">
+            <div class="font-bold text-xl mb-2">Black Widow</div>
+            <p class="text-gray-700 text-base">SHOWCASED @ CES 2016!!!</p>
+          </div>
+          <div class="px-6 pt-4 pb-2">
+            <span
+              class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2"
+              >Body: LP</span
+            >
+            <span
+              class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2"
+              >Pickups: sss</span
+            >
+            <a
+              href="https://www.thingiverse.com/thing:1068688"
+              class="text-blue-500 hover:underline"
+              >get</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
