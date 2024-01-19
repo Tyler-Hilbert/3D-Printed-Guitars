@@ -483,7 +483,7 @@ module.exports = {
               "linear-gradient(to bottom right, rgba(128, 255, 0, 0.8), rgba(128, 165, 0, 0.8))",
           },
           "100%": {
-            transform: "rotate(-360deg)",
+            transform: "rotate(-3600deg)",
           },
         },
 
