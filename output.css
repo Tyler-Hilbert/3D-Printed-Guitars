@@ -1080,10 +1080,6 @@ select {
   clear: none;
 }
 
-.m-32 {
-  margin: 8rem;
-}
-
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -1132,10 +1128,6 @@ select {
 
 .mt-8 {
   margin-top: 2rem;
-}
-
-.mt-32 {
-  margin-top: 8rem;
 }
 
 .box-border {
@@ -1519,7 +1511,7 @@ select {
   }
 
   100% {
-    transform: rotate(360deg);
+    transform: rotate(-360deg);
   }
 }
 
@@ -3005,10 +2997,6 @@ select {
   padding-top: 1rem;
 }
 
-.pt-32 {
-  padding-top: 8rem;
-}
-
 .text-left {
   text-align: left;
 }
@@ -3788,7 +3776,7 @@ select {
   }
 
   100% {
-    transform: rotate(360deg);
+    transform: rotate(-360deg);
   }
 }
 
