@@ -491,5 +491,24 @@
         </a>
       </div>
     </div>
+
+    <!-- Load test -->
+    <script>
+      var img = document.querySelector('img')
+
+      function loaded() {
+        console.log(Date.now())
+        console.log("images loaded")
+      }
+
+      if (img.complete) {
+        loaded()
+      } else {
+        img.addEventListener('load', loaded)
+        img.addEventListener('error', function() {
+            console.log("error")
+        })
+      }
+    </script>
   </body>
 </html>
