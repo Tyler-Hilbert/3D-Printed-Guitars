@@ -22,11 +22,11 @@ function Guitar({ guitar }) {
   return (
     <div class="max-w-sm rounded overflow-hidden shadow-lg">
       <img class="w-full" src={require("../imgs/" + guitar.img_src)} alt={guitar.name}></img>
-      <div class="px-6 py-4">
+      <div class="px-2 py-1">
         <div class="font-bold text-xl mb-2">{guitar.name}</div>
-        <p class="text-gray-700 text-base">{guitar.description}</p>
+        <p class="text-gray-700 text-base leading-tight">{guitar.description}</p>
       </div>
-      <div class="px-6 pt-4 pb-2">
+      <div class="px-2 py-1">
         {Object.keys(guitar.fields).map((field) => (
           <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">{field}: {guitar.fields[field]}</span>
         ))}
@@ -39,7 +39,7 @@ function Guitar({ guitar }) {
 function GuitarsList({ filteredGuitars }) {
   const filtered = filteredGuitars.map(guitar =>  <Guitar guitar={guitar} />);
   return (
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-1">
+    <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-3">
       {filtered}
     </div>
   );
