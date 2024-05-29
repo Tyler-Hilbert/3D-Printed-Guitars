@@ -4,7 +4,7 @@ import { useState } from 'react';
 function Header({}) {
   return (
     <>
-      <div class="bg-gray-100 p-2 rounded">
+      <div class="bg-gradient-to-r from-blue-100 py-8 px-2 rounded-xl">
         <h1 class="text-3xl font-semibold mb-4">3D Printed Guitars Guide</h1>
         <p class="text-base md:text-lg text-gray-700 leading-relaxed mb-4">The largest online directory of 3D printed guitars...</p>
       </div>
