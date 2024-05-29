@@ -1,4 +1,4 @@
-export const guitars = [
+export const guitarsDB = [
     {
         "name": "Prusacaster",
         "description": "The Prusacaster \u2013 How to Design and 3D Print an Electric Guitar that plays well <$150",

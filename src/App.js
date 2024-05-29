@@ -1,12 +1,21 @@
-import { guitars } from './database.js';
+import { guitarsDB } from './database.js';
+import { useState } from 'react';
 
-function Title({}) {
+function Header({}) {
   return (
     <>
-      <h1 class="text-3xl font-semibold mb-4">3D Printed Guitars Guide</h1>
-      <p class="text-base md:text-lg text-gray-700 leading-relaxed mb-4">The largest online directory of 3D printed guitars...</p>
+      <div class="bg-gray-100 p-2 rounded">
+        <h1 class="text-3xl font-semibold mb-4">3D Printed Guitars Guide</h1>
+        <p class="text-base md:text-lg text-gray-700 leading-relaxed mb-4">The largest online directory of 3D printed guitars...</p>
+      </div>
     </>
   );
+}
+
+function Footer({}) {
+  return (
+    <p class="text-base md:text-lg text-gray-700 leading-relaxed p-4">Built by Tyler Hilbert (TYHSoftware@Gmail.com)</p>
+  )
 }
 
 function Guitar({ guitar }) {
@@ -27,13 +36,60 @@ function Guitar({ guitar }) {
   );
 }
 
-function GuitarList({ guitars }) {
+function GuitarsList({ filteredGuitars }) {
+  const filtered = filteredGuitars.map(guitar =>  <Guitar guitar={guitar} />);
   return (
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-1">
-      {guitars.map(guitar =>
-        <Guitar guitar={guitar} />
-      )}
+      {filtered}
     </div>
+  );
+}
+
+function Search({ details }) {
+  const [searchField, setSearchField] = useState("");
+
+  const filteredGuitars = details.filter(
+    guitar => {
+      const lowerSearch = searchField.toLowerCase();
+      return (
+        guitar
+        .name
+        .toLowerCase()
+        .includes(lowerSearch)
+        ||
+        guitar
+        .description
+        .toLowerCase()
+        .includes(lowerSearch)
+        ||
+        JSON.stringify(guitar.fields)
+        .toLowerCase()
+        .includes(lowerSearch)
+      );
+    }
+  );
+
+  const handleChange = e => {
+    setSearchField(e.target.value);
+  };
+
+  function searchList() {
+    return (
+      <GuitarsList filteredGuitars={filteredGuitars} />
+    );
+  }
+
+  return (
+    <section>
+      <div class="py-2">
+        <input
+          type = "search"
+          placeholder = "Search Guitar"
+          onChange = {handleChange}
+        />
+      </div>
+      {searchList()}
+    </section>
   );
 }
 
@@ -41,9 +97,9 @@ function App() {
   return (
     <>
       <div class="container mx-auto p-4">
-        <Title></Title>
-        <GuitarList guitars={guitars} />
-        <p class="text-base md:text-lg text-gray-700 leading-relaxed p-4">Built by Tyler Hilbert (TYHSoftware@Gmail.com)</p>
+        <Header />
+        <Search details={guitarsDB} />
+        <Footer />
       </div>
     </>
   );
