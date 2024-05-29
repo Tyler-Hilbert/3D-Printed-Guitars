@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/3D-Printed-Guitars/static/css/main.bcb1e2b2.css",
-    "main.js": "/3D-Printed-Guitars/static/js/main.a213f447.js",
+    "main.css": "/3D-Printed-Guitars/static/css/main.45b31ac3.css",
+    "main.js": "/3D-Printed-Guitars/static/js/main.da48cc8d.js",
     "static/media/6.jpeg": "/3D-Printed-Guitars/static/media/6.a319234772fe02aa8957.jpeg",
     "static/media/7.webp": "/3D-Printed-Guitars/static/media/7.8a5149e2003431f8f343.webp",
     "static/media/38.JPG": "/3D-Printed-Guitars/static/media/38.19ab7fcca452ca3c9ac0.JPG",
@@ -92,11 +92,11 @@
     "static/media/59.avif": "/3D-Printed-Guitars/static/media/59.3d1d7f1f87497c300c32.avif",
     "static/media/61.jpg": "/3D-Printed-Guitars/static/media/61.ae873c73bf70f300b889.jpg",
     "index.html": "/3D-Printed-Guitars/index.html",
-    "main.bcb1e2b2.css.map": "/3D-Printed-Guitars/static/css/main.bcb1e2b2.css.map",
-    "main.a213f447.js.map": "/3D-Printed-Guitars/static/js/main.a213f447.js.map"
+    "main.45b31ac3.css.map": "/3D-Printed-Guitars/static/css/main.45b31ac3.css.map",
+    "main.da48cc8d.js.map": "/3D-Printed-Guitars/static/js/main.da48cc8d.js.map"
   },
   "entrypoints": [
-    "static/css/main.bcb1e2b2.css",
-    "static/js/main.a213f447.js"
+    "static/css/main.45b31ac3.css",
+    "static/js/main.da48cc8d.js"
   ]
 }
