@@ -39,7 +39,7 @@ function Guitar({ guitar }) {
 function GuitarsList({ filteredGuitars }) {
   const filtered = filteredGuitars.map(guitar =>  <Guitar guitar={guitar} />);
   return (
-    <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-3">
+    <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-6 gap-3">
       {filtered}
     </div>
   );
