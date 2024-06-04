@@ -1,12 +1,16 @@
 import { guitarsDB } from './database.js';
 import { useState } from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css';
+
+// TODO - What's the difference between container and container-fluid
+
 
 function Header({}) {
   return (
     <>
-      <div class="bg-gradient-to-r from-blue-100 py-8 px-2 rounded-xl">
-        <h1 class="text-3xl font-semibold mb-4">3D Printed Guitars Guide</h1>
-        <p class="text-base md:text-lg text-gray-700 leading-relaxed mb-4">The largest online directory of 3D printed guitars...</p>
+      <div class="jumbotron p-4">
+        <h1>3D Printed Guitars Guide</h1>
+        <p>The largest online directory of 3D printed guitars...</p>
       </div>
     </>
   );
@@ -14,23 +18,27 @@ function Header({}) {
 
 function Footer({}) {
   return (
-    <p class="text-base md:text-lg text-gray-700 leading-relaxed p-4">Built by Tyler Hilbert (TYHSoftware@Gmail.com)</p>
+    <p class="p-4">Built by Tyler Hilbert (TYHSoftware@Gmail.com)</p>
   )
 }
 
 function Guitar({ guitar }) {
   return (
-    <div class="max-w-sm rounded overflow-hidden shadow-lg">
-      <img class="w-full" src={require("../imgs/" + guitar.img_src)} alt={guitar.name}></img>
-      <div class="px-2 py-1">
-        <div class="font-bold text-xl mb-2">{guitar.name}</div>
-        <p class="text-gray-700 text-base leading-tight">{guitar.description}</p>
-      </div>
-      <div class="px-2 py-1">
-        {Object.keys(guitar.fields).map((field) => (
-          <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">{field}: {guitar.fields[field]}</span>
-        ))}
-        <a href={guitar.link} class="text-blue-500 hover:underline">get</a>
+    <div class="container-fluid">
+      <div class="row p-4">
+        <div class="col-sm-4">
+          <img src={require("../imgs/" + guitar.img_src)} alt={guitar.name} class="w-100"></img>
+        </div>
+        <div class="col-sm-4">
+          <h4>{guitar.name}</h4>
+          <p>{guitar.description}</p>
+        </div>
+        <div class="col-sm-4">
+          {Object.keys(guitar.fields).map((field) => (
+            <p>{field}: {guitar.fields[field]}</p>
+          ))}
+          <a href={guitar.link}>Download 3D Model</a>
+        </div>
       </div>
     </div>
   );
@@ -39,8 +47,8 @@ function Guitar({ guitar }) {
 function GuitarsList({ filteredGuitars }) {
   const filtered = filteredGuitars.map(guitar =>  <Guitar guitar={guitar} />);
   return (
-    <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-6 gap-3">
-      {filtered}
+    <div class="container-fluid">
+        {filtered}
     </div>
   );
 }
@@ -81,12 +89,12 @@ function Search({ details }) {
 
   return (
     <section>
-      <div class="py-2">
-        <input
+      <div>
+        {/*<input
           type = "search"
           placeholder = "Search Guitar"
           onChange = {handleChange}
-        />
+  />*/}
       </div>
       {searchList()}
     </section>
@@ -96,7 +104,7 @@ function Search({ details }) {
 function App() {
   return (
     <>
-      <div class="container mx-auto p-4">
+      <div>
         <Header />
         <Search details={guitarsDB} />
         <Footer />
