@@ -2,9 +2,6 @@ import { guitarsDB } from './database.js';
 import { useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-// TODO - What's the difference between container and container-fluid
-
-
 function Header({}) {
   return (
     <>
