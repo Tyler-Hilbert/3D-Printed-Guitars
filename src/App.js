@@ -23,10 +23,10 @@ function Guitar({ guitar }) {
   return (
     <div class="container-fluid">
       <div class="row p-4">
-        <div class="col-sm-4">
+        <div class="col-sm-2">
           <img src={require("../imgs/" + guitar.img_src)} alt={guitar.name} class="w-100"></img>
         </div>
-        <div class="col-sm-4">
+        <div class="col-sm-6">
           <h4>{guitar.name}</h4>
           <p>{guitar.description}</p>
         </div>
