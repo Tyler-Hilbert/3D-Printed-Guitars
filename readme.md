@@ -10,3 +10,5 @@ $npm install
 $npm run start  
 ### Deploy to GH Pages  
 $npm run deploy  
+You may have to increase buffer size  
+$git config --global http.postBuffer 524288000  
