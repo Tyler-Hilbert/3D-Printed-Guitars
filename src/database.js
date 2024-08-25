@@ -896,5 +896,101 @@ export const guitarsDB = [
             "Strings": "4",
             "Pickups": "sss"
         }
+    },
+    {
+        "name": "Classical travel guitar - version 2",
+        "description": "A solid-body, electrical nylon-stringed guitar with the general shape and dimensions of a concert guitar.",
+        "img_src": "93.webp",
+        "link": "https://www.printables.com/model/922686-classical-travel-guitar-version-2",
+        "fields": {
+            "Instrument": "Classical Guitar",
+            "String Type": "Nylon"
+        }
+    },
+    {
+        "name": "The Gliding P",
+        "description": "V-shaped electric guitar you can possibly build yourself.",
+        "img_src": "95.webp",
+        "link": "https://www.printables.com/model/920531-baritone-ukulele-uookbass-remix",
+        "fields": {
+            "Pickups": "hh",
+            "Body": "V"
+        }
+    },
+    {
+        "name": "Super Stratocaster",
+        "description": "Super Stratocaster - Electric Guitar.",
+        "img_src": "96.webp",
+        "link": "https://www.printables.com/model/897269-super-stratocaster-electric-guitar",
+        "fields": {
+            "Pickups": "hh",
+            "Body": "Strat"
+        }
+    },
+    {
+        "name": "Warlock Electric Guitar Single Pickup",
+        "description": "A remix on the model for the BC Rich Warlock guitar.",
+        "img_src": "97.webp",
+        "link": "https://www.printables.com/model/872796-warlock-electric-guitar-single-pickup",
+        "fields": {
+            "Pickups": "h",
+            "Body": "Warlock"
+        }
+    },
+    {
+        "name": "PrusaV - Bass",
+        "description": "A Flying-V style Bass.",
+        "img_src": "98.webp",
+        "link": "https://www.printables.com/model/824686-prusav-bass",
+        "fields": {
+            "Instrument": "Electric Bass",
+            "Body": "v"
+        }
+    },
+    {
+        "name": "Telecaster PG",
+        "description": "This is a single piece printable (on the XL or something with similar volume) guitar body for a Squier Bullet Telecaster.",
+        "img_src": "99.webp",
+        "link": "https://www.printables.com/model/787293-telecaster-pg",
+        "fields": {
+            "Pickups": "ss"
+        }
+    },
+    {
+        "name": "Prusacaster 2077",
+        "description": "Cyberpunk 2077 inspired version of the famous Prusacaster.",
+        "img_src": "100.webp",
+        "link": "https://www.printables.com/model/761912-prusacaster-2077",
+        "fields": {
+            "Pickups": "ss"
+        }
+    },
+    {
+        "name": "Sparrow V3",
+        "description": "Headless electric travel guitar, now with ergonomic changes.",
+        "img_src": "101.webp",
+        "link": "https://www.printables.com/model/757542-sparrow-v3",
+        "fields": {
+            "Pickups": "sss",
+            "Bridge": "Headless"
+        }
+    },
+    {
+        "name": "Dreamcaster",
+        "description": "My modern take on a Fender Starcaster.",
+        "img_src": "102.webp",
+        "link": "https://www.printables.com/model/734691-dreamcaster-guitar-body",
+        "fields": {
+            "Pickups": "h"
+        }
+    },
+    {
+        "name": "Magneto-X Bass Guitar",
+        "description": "I wanted to make my son and daughter a Bass Guitar, but wanted to print it in one piece. This needs 3 kg of filament.",
+        "img_src": "103.webp",
+        "link": "https://www.printables.com/model/705913-magneto-x-bass-guitar",
+        "fields": {
+            "Instrument": "Electric Bass"
+        }
     }
-]    
+]
