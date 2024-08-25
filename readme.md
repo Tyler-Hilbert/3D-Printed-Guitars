@@ -7,6 +7,6 @@ Webpage: https://tyler-hilbert.github.io/3D-Printed-Guitars/
 # Usage  
 ### Local Usage
 $npm install  
-$npm run  
+$npm run start  
 ### Deploy to GH Pages  
 $npm run deploy  

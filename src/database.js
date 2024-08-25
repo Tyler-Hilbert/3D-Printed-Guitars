@@ -857,5 +857,44 @@ export const guitarsDB = [
         "fields": {
             "Instrument": "Ukulele"
         }
+    },
+    {
+        "name": "fully working 3d printed guitar",
+        "description": "working 3d Printed Electric Guitar.",
+        "img_src": "89.jpeg",
+        "link": "https://www.thingiverse.com/thing:6705059",
+        "fields": {
+            "Pickups": "s"
+        }
+    },
+    {
+        "name": "Soprano Ukulele with LED Lighting",
+        "description": "V3 - This is a version of my recent soprano ukulele design, that includes built in LED lighting! There are both acoustic, and acoustic-electric bodies available.  The body is printed in transparent PLA for maximum effect.",
+        "img_src": "90.webp",
+        "link": "https://www.thingiverse.com/thing:6697926",
+        "fields": {
+            "Instrument": "Ukulele"
+        }
+    },
+    {
+        "name": "Travel Telecaster Body",
+        "description": "Telecaster (or Esquire) mini body using full-sized guitar neck and Tele style hardware.  I got rid of the neck pickup cavity and rounded the sharp corners.",
+        "img_src": "91.jpg",
+        "link": "https://www.thingiverse.com/thing:6694462",
+        "fields": {
+            "Pickups": "s",
+            "Size": "Travel Size"
+        }
+    },
+    {
+        "name": "Coffin Bass",
+        "description": "Coffin Bass originally uploaded by Drathis, published Jun 5, 2014.",
+        "img_src": "92.webp",
+        "link": "https://www.thingiverse.com/thing:6639898",
+        "fields": {
+            "Instrument": "Bass Guitar",
+            "Strings": "4",
+            "Pickups": "sss"
+        }
     }
 ]    
