@@ -6,8 +6,8 @@ function Header({}) {
   return (
     <>
       <div class="jumbotron p-4">
-        <h1>3D Printed Guitars Guide</h1>
-        <p>The largest online directory of 3D printed guitars...</p>
+        <h1>Print My Guitar</h1>
+        <p>The largest online database of 3D printable guitars...</p>
       </div>
     </>
   );
@@ -15,42 +15,11 @@ function Header({}) {
 
 function Footer({}) {
   return (
-    <p class="p-4">Built by Tyler Hilbert (TYHSoftware@Gmail.com)</p>
+    <p class="p-4">Built by Tyler Hilbert (I'm currently in the job market -- TYHSoftware@gmail.com)</p>
   )
 }
 
-function Guitar({ guitar }) {
-  return (
-    <div class="container-fluid">
-      <div class="row p-4">
-        <div class="col-sm-2">
-          <img src={require("../imgs/" + guitar.img_src)} alt={guitar.name} class="w-100"></img>
-        </div>
-        <div class="col-sm-6">
-          <h4>{guitar.name}</h4>
-          <p>{guitar.description}</p>
-        </div>
-        <div class="col-sm-4">
-          {Object.keys(guitar.fields).map((field) => (
-            <p>{field}: {guitar.fields[field]}</p>
-          ))}
-          <a href={guitar.link}>Download 3D Model</a>
-        </div>
-      </div>
-    </div>
-  );
-}
-
-function GuitarsList({ filteredGuitars }) {
-  const filtered = filteredGuitars.map(guitar =>  <Guitar guitar={guitar} />);
-  return (
-    <div class="container-fluid">
-        {filtered}
-    </div>
-  );
-}
-
-function Search({ details }) {
+function SearchArea({ details }) {
   const [searchField, setSearchField] = useState("");
 
   const filteredGuitars = details.filter(
@@ -86,15 +55,43 @@ function Search({ details }) {
 
   return (
     <section>
-      <div>
-        {/*<input
-          type = "search"
-          placeholder = "Search Guitar"
-          onChange = {handleChange}
-  />*/}
-      </div>
       {searchList()}
     </section>
+  );
+}
+
+function GuitarsList({ filteredGuitars }) {
+  const filtered = filteredGuitars.map(guitar =>  <Guitar guitar={guitar} />);
+  return (
+    <div class="container-fluid">
+        {filtered}
+    </div>
+  );
+}
+
+function Guitar({ guitar }) {
+  if (guitar.broken_link === true) { // Don't render if the link is broken
+    return null;
+  }
+
+  return (
+    <div class="container-fluid">
+      <div class="row p-4">
+        <div class="col-sm-2">
+          <img src={require("../imgs/" + guitar.img_src)} alt={guitar.name} class="w-100"></img>
+        </div>
+        <div class="col-sm-6">
+          <h4>{guitar.name}</h4>
+          <p>{guitar.description}</p>
+        </div>
+        <div class="col-sm-4">
+          {Object.keys(guitar.fields).map((field) => (
+            <p>{field}: {guitar.fields[field]}</p>
+          ))}
+          <a href={guitar.link}>Download 3D Model</a>
+        </div>
+      </div>
+    </div>
   );
 }
 
@@ -103,7 +100,7 @@ function App() {
     <>
       <div>
         <Header />
-        <Search details={guitarsDB} />
+        <SearchArea details={guitarsDB} />
         <Footer />
       </div>
     </>

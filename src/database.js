@@ -162,18 +162,17 @@ export const guitarsDB = [
             "Size": "Travel Size"
         }
     },
-    /*
     {
         "name": "YUK",
         "description": "Headless Electic Guitar. Modular Design. Light weight. Good for Trip. Easy Assembly,",
         "img_src": "14.webp",
         "link": "https://www.printables.com/model/599849-3d-print-headless-electric-guitar",
+        "broken_link": true,
         "fields": {
             "Pickups": "hh",
             "Bridge": "Headless"
         }
     },
-    */
     {
         "name": "Psicojimi",
         "description": "Headless electric guitar V3,",
@@ -500,12 +499,12 @@ export const guitarsDB = [
             "Pickups": "hh"
         }
     },
-    /*
     {
         "name": "Ibenez Jem 777 3D Model",
         "description": "$3",
         "img_src": "51.jpg",
         "link": "https://www.etsy.com/listing/1011428157/ibenez-jem-777-3d-model",
+        "broken_link": true,
         "fields": {
             "Body": "Jem",
             "Pickups": "hsh"
@@ -516,6 +515,7 @@ export const guitarsDB = [
         "description": "$10",
         "img_src": "52.avif",
         "link": "https://www.etsy.com/listing/997462574/mermaid-guitar-body-3d-model",
+        "broken_link": true,
         "fields": {
             "Body": "Strat",
             "Pickups": "ss"
@@ -526,6 +526,7 @@ export const guitarsDB = [
         "description": "$10",
         "img_src": "53.webp",
         "link": "https://www.etsy.com/listing/993210502/dragon-guitar-stl-3d-model",
+        "broken_link": true,
         "fields": {
             "Body": "Strat",
             "Pickups": "sss"
@@ -536,6 +537,7 @@ export const guitarsDB = [
         "description": "$4.99 Guitar STL Files, Functional 3D Print, 3D Model, 3D Print Design (RIVER)",
         "img_src": "54.avif",
         "link": "https://www.etsy.com/listing/1402669190/guitar-stl-files-functional-3d-print-3d",
+        "broken_link": true,
         "fields": {
             "Body": "LP",
             "Pickups": "hh"
@@ -546,6 +548,7 @@ export const guitarsDB = [
         "description": "$4.99 Guitar STL Files, Functional 3D Print, 3D Model, 3D Print Design (FIRE)",
         "img_src": "55.webp",
         "link": "https://www.etsy.com/listing/1402672836/guitar-stl-files-functional-3d-print-3d",
+        "broken_link": true,
         "fields": {
             "Body": "LP",
             "Pickups": "hh"
@@ -556,6 +559,7 @@ export const guitarsDB = [
         "description": "$4.99 Guitar STL Files, Functional 3D Print, 3D Model, 3D Print Design (SPIDER)",
         "img_src": "56.avif",
         "link": "https://www.etsy.com/listing/1402673278/guitar-stl-files-functional-3d-print-3d",
+        "broken_link": true,
         "fields": {
             "Body": "LP",
             "Pickups": "hh"
@@ -566,6 +570,7 @@ export const guitarsDB = [
         "description": "$4.99 Guitar STL Files, Functional 3D Print, 3D Model, 3D Print Design (STRIPES)",
         "img_src": "57.jpg",
         "link": "https://www.etsy.com/listing/1416894411/guitar-stl-files-functional-3d-print-3d",
+        "broken_link": true,
         "fields": {
             "Body": "LP",
             "Pickups": "hh"
@@ -576,6 +581,7 @@ export const guitarsDB = [
         "description": "$4.99 Guitar STL Files, Functional 3D Print, 3D Model, 3D Print Design (CHECKERS)",
         "img_src": "58.jpg",
         "link": "https://www.etsy.com/listing/1402672464/guitar-stl-files-functional-3d-print-3d",
+        "broken_link": true,
         "fields": {
             "Body": "LP",
             "Pickups": "hh"
@@ -586,12 +592,12 @@ export const guitarsDB = [
         "description": "$4.99 Guitar STL Files, Functional 3D Print, 3D Model, 3D Print Design (BUBBLES)",
         "img_src": "59.avif",
         "link": "https://www.etsy.com/listing/1402672200/guitar-stl-files-functional-3d-print-3d",
+        "broken_link": true,
         "fields": {
             "Body": "LP",
             "Pickups": "hh"
         }
     },
-    */
     {
         "name": "Mcorreadesign",
         "description": "The Model M Guitar was a personal research project in seeking the feasibility of building the first acoustic guitar totally printed in 3D with almost no support material. The design was inspired by Devin Montes' The Bodysnatcher design, an Australian Youtuber, to make the acoustic body of the guitar independent of the arm, what makes the design modular and allow you to create your own body. The Project was accomplished through the support of MakerLab FACAMP that made available the space and 3D filament for the construction of this project. I would like to thank the support and enthusiasm of my friends Ana Beatriz Linardi and Rafael Coelho who believed and helped in this project.",
@@ -844,12 +850,12 @@ export const guitarsDB = [
             "Instrument": "Ukulele"
         }
     },
-    /*
     {
         "name": "Headless Tenor Ukulele",
         "description": "Fanned fret, compound radius, headless electric ukulele. Strandberg inspired of course.",
         "img_src": "87.webp",
         "link": "https://www.printables.com/model/494673-headless-tenor-ukulele",
+        "broken_link": true,
         "fields": {
             "Instrument": "Ukulele"
         }
@@ -859,11 +865,11 @@ export const guitarsDB = [
         "description": "A sopranissimo body spranino length ukulele that's a bit different.",
         "img_src": "88.webp",
         "link": "https://www.printables.com/model/477841-taruke-ukulele",
+        "broken_link": true,
         "fields": {
             "Instrument": "Ukulele"
         }
     },
-    */
     {
         "name": "fully working 3d printed guitar",
         "description": "working 3d Printed Electric Guitar.",
