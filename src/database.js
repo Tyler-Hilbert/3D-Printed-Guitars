@@ -162,6 +162,7 @@ export const guitarsDB = [
             "Size": "Travel Size"
         }
     },
+    /*
     {
         "name": "YUK",
         "description": "Headless Electic Guitar. Modular Design. Light weight. Good for Trip. Easy Assembly,",
@@ -172,6 +173,7 @@ export const guitarsDB = [
             "Bridge": "Headless"
         }
     },
+    */
     {
         "name": "Psicojimi",
         "description": "Headless electric guitar V3,",
@@ -498,6 +500,7 @@ export const guitarsDB = [
             "Pickups": "hh"
         }
     },
+    /*
     {
         "name": "Ibenez Jem 777 3D Model",
         "description": "$3",
@@ -588,6 +591,7 @@ export const guitarsDB = [
             "Pickups": "hh"
         }
     },
+    */
     {
         "name": "Mcorreadesign",
         "description": "The Model M Guitar was a personal research project in seeking the feasibility of building the first acoustic guitar totally printed in 3D with almost no support material. The design was inspired by Devin Montes' The Bodysnatcher design, an Australian Youtuber, to make the acoustic body of the guitar independent of the arm, what makes the design modular and allow you to create your own body. The Project was accomplished through the support of MakerLab FACAMP that made available the space and 3D filament for the construction of this project. I would like to thank the support and enthusiasm of my friends Ana Beatriz Linardi and Rafael Coelho who believed and helped in this project.",
@@ -840,6 +844,7 @@ export const guitarsDB = [
             "Instrument": "Ukulele"
         }
     },
+    /*
     {
         "name": "Headless Tenor Ukulele",
         "description": "Fanned fret, compound radius, headless electric ukulele. Strandberg inspired of course.",
@@ -858,6 +863,7 @@ export const guitarsDB = [
             "Instrument": "Ukulele"
         }
     },
+    */
     {
         "name": "fully working 3d printed guitar",
         "description": "working 3d Printed Electric Guitar.",
