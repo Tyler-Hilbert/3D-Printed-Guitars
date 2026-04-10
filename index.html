@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<!-- Vibe coded webpage to display HuggingFace dataset of 3D printable guitar models -->
+<html>
+<head>
+  <title>3D Printable Guitars</title>
+  <style>
+    body { font-family: sans-serif; padding: 1rem; }
+    table { border-collapse: collapse; width: 100%; }
+    th, td { border: 1px solid #ccc; padding: 6px 10px; text-align: left; }
+    th { background: #f0f0f0; }
+    tr:hover { background: #f9f9f9; }
+    a { color: #0066cc; }
+  </style>
+</head>
+<body>
+  <h1>3D Printed Guitar Models</h1>
+  <p>The largest online directory of downloadable guitar models.</p>
+  <table id="table">
+    <tr>
+        <th>Name</th>
+        <th>Body</th>
+        <th>Description</th>
+        <th>Likes</th>
+        <th>Link</th>
+    </tr>
+  </table>
+  <script>
+    fetch("https://huggingface.co/datasets/TylerHilbert/3D-Printable-Guitar-Models/resolve/main/Guitars.json")
+      .then(r => r.json())
+      .then(data => {
+        const table = document.getElementById("table");
+        data.forEach(item => {
+          table.innerHTML += `<tr>
+            <td>${item.name || ""}</td>
+            <td>${item.Body || ""}</td>
+            <td>${item.description || ""}</td>
+            <td>${item.likes || ""}</td>
+            <td><a href="${item.link}" target="_blank">Download</a></td>
+          </tr>`;
+        });
+      });
+  </script>
+</body>
+</html>
